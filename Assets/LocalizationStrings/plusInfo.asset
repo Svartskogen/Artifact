@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: plusInfo
+  m_EditorClassIdentifier: 
+  spanish: 'Asegurate de acercarte a tu Artifact para curarlo, una vez hayas recolectado
+    frutas '
+  english: Make sure to get close to you Artifact to heal it once you harvested some
+    fruits
