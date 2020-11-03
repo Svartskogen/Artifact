@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>
+/// Main scriptable object used for localization purposes
+/// </summary>
 [CreateAssetMenu(fileName = "New string",menuName = "Loc. String")]
 public class LocalizableString : ScriptableObject
 {

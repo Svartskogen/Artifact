@@ -2,31 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component responsible of the player movement and managing the <see cref="SpriteRenderer.flipX"/> property
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
-    public ParticleSystem footStepsParticles;
-
     public float movementSpeed;
 
-    Rigidbody2D rigidbody;
+    new Rigidbody2D rigidbody;
     Vector2 normVector;
     SpriteRenderer sprite;
 
     float timer;
     bool harvesting;
-    // Start is called before the first frame update
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
-    private void Update()
+
+    void Update()
     {
         if(Time.time > timer)
         {
             harvesting = false;
         }
-        HandleParticles();
         FlipSprite();
     }
 
@@ -42,25 +43,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void HandleParticles()
-    {
-        if (rigidbody.velocity == Vector2.zero)
-        {
-            if (footStepsParticles.isPlaying)
-            {
-                footStepsParticles.Stop(false, ParticleSystemStopBehavior.StopEmitting);
-            }
-        }
-        else
-        {
-            if (!footStepsParticles.isPlaying)
-            {
-                footStepsParticles.Play(false);
-            }
-        }
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (harvesting)
@@ -69,12 +51,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-        normVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if(normVector.sqrMagnitude > 1)
-        {
-            normVector = normVector.normalized;
-        }
-        rigidbody.velocity = new Vector2(normVector.x * movementSpeed,normVector.y * movementSpeed);
+            normVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if(normVector.sqrMagnitude > 1)
+            {
+                normVector = normVector.normalized;
+            }
+            rigidbody.velocity = new Vector2(normVector.x * movementSpeed,normVector.y * movementSpeed);
         }
     }
 

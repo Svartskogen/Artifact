@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Simple Scene Manager with public non-static methods for UI usage 
+/// </summary>
 public class SceneManager : MonoBehaviour
 { 
     public void ChangeScene(int id)

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component responsible of creating and managing the Player's melee attack
+/// </summary>
 public class PlayerSlash : MonoBehaviour
 {
     public GameObject slashPrefab;
@@ -10,7 +13,7 @@ public class PlayerSlash : MonoBehaviour
     public int damage = 35;
 
     float timer;
-    Collider2D collider2D;
+    new Collider2D collider2D;
     public LayerMask enemyMask;
     AudioSource audioSource;
     private void Start()

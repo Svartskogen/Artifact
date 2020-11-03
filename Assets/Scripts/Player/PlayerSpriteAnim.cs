@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Simple script based animation for the Player
+/// </summary>
 public class PlayerSpriteAnim : MonoBehaviour
 {
     public Sprite[] sprites;
@@ -10,13 +13,12 @@ public class PlayerSpriteAnim : MonoBehaviour
     float timer;
     int state = 0;
     SpriteRenderer spriteRenderer;
-    // Start is called before the first frame update
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Time.time > timer)

@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
+using System;
 
+[Obsolete("Deprecated, not releasing to Kongregate anymore",false)]
 public class KongregateAPIController : MonoBehaviour
 {
     private static KongregateAPIController instance;

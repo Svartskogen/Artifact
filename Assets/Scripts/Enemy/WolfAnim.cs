@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Simple script-based animation for wolves
+/// </summary>
 public class WolfAnim : MonoBehaviour
 {
-    public Sprite[] sprites;
-    public float time;
+    [SerializeField] Sprite[] sprites;
+    [SerializeField] float time;
+
     EnemyAI enemyAI;
     SpriteRenderer spriteRenderer;
     int state = 0;
     float timer;
-    // Start is called before the first frame update
     void Start()
     {
         enemyAI = GetComponent<EnemyAI>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (enemyAI.isMoving)

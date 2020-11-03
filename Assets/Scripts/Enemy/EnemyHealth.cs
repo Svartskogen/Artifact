@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Simple enemy health system.
+/// </summary>
 public class EnemyHealth : MonoBehaviour
 {
     public int max;

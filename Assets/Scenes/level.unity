@@ -1613,6 +1613,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.57254905, g: 0.6, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2844,6 +2845,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8117647, g: 0.40784314, b: 0.3529412, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4156,8 +4158,8 @@ MonoBehaviour:
   - {fileID: 1158353608}
   eaterChance: 3
   spawnTime: 12
-  spawnFloor: 3.5
   spawnReductionPer: 1
+  spawnFloor: 3.5
 --- !u!114 &642254317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10380,6 +10382,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.57254905, g: 0.6, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10736,7 +10739,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -11553,7 +11556,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7
+      scalar: 0
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -11606,7 +11609,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 3
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -22287,6 +22290,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.57254905, g: 0.6, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -22805,6 +22809,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.38431373, g: 0.34117648, b: 0.3764706, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -22878,6 +22883,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -25347,6 +25353,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.57254905, g: 0.6, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

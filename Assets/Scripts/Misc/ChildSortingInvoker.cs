@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-//using CodeMonkey.MonoBehaviours;
-//using CodeMonkey.Utils;
+
 
 /// <summary>
-/// Invoca la actualizacion de la sorting layer heredada del padre y le suma order;
+/// Waits for the sorting layer of the parent to be assigned, asigns the same value to the object's <see cref="SpriteRenderer"/>
+/// and the adds <see cref="add"/> to it 
 /// <para>
-/// Usar con un PositionRenderSorter en el padre
+/// Use it with a <see cref="PositionRendererSorter"/> in the parent object,
+/// optionally can be set <see cref="oneTime"/> to true to update the sorting layer every frame.
 /// </para>
 /// </summary>
 public class ChildSortingInvoker : MonoBehaviour
@@ -29,7 +30,6 @@ public class ChildSortingInvoker : MonoBehaviour
         {
             parent = transform.parent.GetComponent<SpriteRenderer>();
         }
-        
     }
 
     private void Update()

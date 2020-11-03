@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Efecto de golpe simple
+/// </summary>
 public class HitFx : MonoBehaviour
 {
-    public Sprite[] sprites;
-    public float time;
+    [SerializeField] Sprite[] sprites;
+    [SerializeField] float time;
+
     float timer;
     int state = 0;
     SpriteRenderer spriteRenderer;
@@ -18,7 +22,6 @@ public class HitFx : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Time.time > timer)
         {
             if (state == sprites.Length)

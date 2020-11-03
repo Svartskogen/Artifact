@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Rotates the object to the mouse position, used with <see cref="PlayerSlash"/> for melee attacks
+/// </summary>
 public class WeaponLookAtMouse : MonoBehaviour
 {
     Vector3 mousePos;
     private SpriteRenderer sprite;
-    // Start is called before the first frame update
+
     void Start()
     {
         sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);

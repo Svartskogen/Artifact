@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to store the fruits harvested with <see cref="PlayerHarvest"/> from <see cref="BushFruits"/>
+/// </summary>
 public class PlayerBackpack : MonoBehaviour
 {
     public int max;
