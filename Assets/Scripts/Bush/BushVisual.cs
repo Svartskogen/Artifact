@@ -43,7 +43,7 @@ public class BushVisual : MonoBehaviour
     }
 
     /// <summary>
-    /// Used by <see cref="BushFruits.HarvestFruit"/> to sequentialy hide the fruits visuals
+    /// Used by <see cref="BushFruits.HarvestFruit"/> to sequentially hide the fruits visuals
     /// </summary>
     public void HideFruits()
     {
