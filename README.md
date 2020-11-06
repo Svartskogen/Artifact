@@ -13,6 +13,7 @@ Originaly made in 72 hours for both Ludum Dare 46 and Torneo GJA round 1; Theme 
 
 - The game is currently built in **Unity 2019.4.9f1**
 - All the code is documented with `<summary>` tags so you can get a get a quick idea of the purpose of each component.
+
   <img src="documentation.png" />
 - Features Scriptable Object based simple localization system.
   <img src="scriptableObjects.png" />
