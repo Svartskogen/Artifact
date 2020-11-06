@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Helper script that disables a button at Start, and enables it after one second.
+/// </summary>
 public class BtnUsableAfter1Sec : MonoBehaviour
 {
     Button button;
     float timer;
-    // Start is called before the first frame update
+
     void Start()
     {
         button = GetComponent<Button>();
@@ -15,7 +18,6 @@ public class BtnUsableAfter1Sec : MonoBehaviour
         timer = Time.time + 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Time.time > timer)

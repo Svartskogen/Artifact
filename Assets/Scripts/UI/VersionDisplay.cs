@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Keeps the object's <see cref="Text"/> updated with the current game version
+/// </summary>
 public class VersionDisplay : MonoBehaviour
 {
     private Text text;
-    // Start is called before the first frame update
+    
     void Start()
     {
         text = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.text = Application.version;

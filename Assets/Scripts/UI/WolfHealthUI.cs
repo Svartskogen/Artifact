@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Scales the current object based on the <see cref="EnemyHealth.current"/> value
+/// </summary>
 public class WolfHealthUI : MonoBehaviour
 {
     EnemyHealth enemyHealth;
     float scale;
-    // Start is called before the first frame update
+
     void Start()
     {
         enemyHealth = GetComponentInParent<EnemyHealth>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         scale = (float)enemyHealth.current / (float)enemyHealth.max;

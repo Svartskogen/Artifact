@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Holds and manages the information about the Artifact's health and provides functions to damage and restore it's health.
+/// </summary>
 public class Artifact : MonoBehaviour
 {
     public int health;
@@ -10,7 +13,7 @@ public class Artifact : MonoBehaviour
     public int bleed;
     AudioSource audioSource;
     float timer;
-    // Start is called before the first frame update
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -18,7 +21,6 @@ public class Artifact : MonoBehaviour
         timer = Time.time + 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Time.time > timer)
@@ -30,12 +32,7 @@ public class Artifact : MonoBehaviour
         if(health <= 0)
         {
             health = 0;
-            CallDeath();
         }
-    }
-    void CallDeath()
-    {
-
     }
     public void Damage(int amount)
     {

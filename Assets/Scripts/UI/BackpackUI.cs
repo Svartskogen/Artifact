@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/// <summary>
+/// Updates the UI with the current amount of fruits in the <see cref="PlayerBackpack"/>
+/// </summary>
 public class BackpackUI : MonoBehaviour
 {
-    public LocalizableString localizableString;
-    public PlayerBackpack backpack;
+    [SerializeField] LocalizableString localizableString;
+    [SerializeField] PlayerBackpack backpack;
     Text text;
-    // Start is called before the first frame update
+
     void Start()
     {
         text = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.text = localizableString.GetString(Localization.currentLanguage) + ":\n" + backpack.current + " / " + backpack.max;

@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game state manager, keeps track of the <see cref="Artifact"/> health and clocks the time to win.
+/// </summary>
 public class Manager : MonoBehaviour
 {
     public float timeToWin;
     public Artifact artifact;
     SceneManager sceneManager;
     float timer;
-    // Start is called before the first frame update
+
     void Awake()
     {
         timer = timeToWin;
         sceneManager = GetComponent<SceneManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
