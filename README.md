@@ -18,7 +18,7 @@ Originaly made in 72 hours for both Ludum Dare 46 and Torneo GJA round 1; Theme 
 - Features Scriptable Object based simple localization system.
   <img src="scriptableObjects.png" />
 - Clone the repo straight away with `git clone https://github.com/Svartskogen/Artifact.git` and check the game in Unity by yourself
-- The game is intended to be built to **WebGL** and run in a **960x600** resolution, however it can be ported easily to Desktop and any resolution.
+- The game's target platform is **WebGL** and it's designed to run in a **960x600** resolution, however it can be ported easily to Desktop and any resolution.
 
 ## Play
 
