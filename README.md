@@ -26,9 +26,9 @@ You can play the game right away at [itch.io](https://svartskogen.itch.io/artifa
 
 ## Screenshots
 
-<img src="https://img.itch.zone/aW1hZ2UvNjE4Mjg2LzMyOTAzMzQucG5n/347x500/CUkELl.png" />
+<img src="http://media.svartskogen.com/artifact/screen1.jpg" />
 
-<img src="https://img.itch.zone/aW1hZ2UvNjE4Mjg2LzMyOTAzMzUucG5n/347x500/1SxghU.png" />
+<img src="http://media.svartskogen.com/artifact/screen2.jpg" />
 
 ## License
 
