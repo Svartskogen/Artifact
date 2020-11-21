@@ -2,7 +2,7 @@
 
 Simple 2D game focused in resource and time management!
 
-Originaly made in 72 hours for both Ludum Dare 46 and Torneo GJA round 1; Theme "Keep It Alive"
+Originaly made in **72 hours** for both **Ludum Dare 46** and **Torneo GJA round 1**; Theme "**Keep It Alive**"
 
 | [:sparkles: Features](#code-and-features) | [:video_game: Play!](#play) | [:camera: Screenshots](#screenshots) |
 | --------------- | -------- | ----------- |
