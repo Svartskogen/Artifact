@@ -7,7 +7,7 @@ Originaly made in **72 hours** for both **Ludum Dare 46** and **Torneo GJA round
 | [:sparkles: Features](#code-and-features) | [:video_game: Play!](#play) | [:camera: Screenshots](#screenshots) |
 | --------------- | -------- | ----------- |
 
-<img src="https://svartskogen.com/images/artifact.jpg" />
+<img src="https://svartskogen.com/images/artifact2x1.png" />
 
 ## Code and features
 
